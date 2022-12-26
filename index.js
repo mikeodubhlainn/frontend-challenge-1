@@ -1,12 +1,11 @@
 'use strict';
 
 class InfoBox extends React.Component {
-
-  render() {
     constructor(props) {
         super(props)
     }
 
+  render() {
     return (
         <div className="infobox">
         <h1>Personal info</h1>
