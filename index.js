@@ -1,14 +1,21 @@
-class Like extends React.Component {
-    constructor(props) {
-        super(props)
-    }
+'use strict';
 
-    render() {
-        return (
-            <div><h1>My first paragraph</h1></div>
-        )}
+function LikeButton() {
+  const [liked, setLiked] = React.useState(false);
+
+  if (liked) {
+    return 'You liked this!';
+  }
+
+  return React.createElement(
+    'button',
+    {
+      onClick: () => setLiked(true),
+    },
+    'Like'
+  );
 }
 
-const domContainer = document.getElementById("app");
-const root = ReactDOM.createRoot(domContainer);
-ReactDOM.render(<Like />, domContainer);
+const rootNode = document.getElementById('like-button-root');
+const root = ReactDOM.createRoot(rootNode);
+root.render(React.createElement(LikeButton));
