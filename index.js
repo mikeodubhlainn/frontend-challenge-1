@@ -5,7 +5,7 @@ class Like extends React.Component {
 
     render() {
         return (
-            <div><p>My first paragraph</p></div>
+            <div><h1>My first paragraph</h1></div>
         )}
 }
 
