@@ -5,7 +5,7 @@ class InfoBox extends React.Component {
         super(props)
     }
 
-    handleClick(){
+    handleClick() {
         alert("Button clicked!");
     }
 
