@@ -3,7 +3,7 @@
 function InfoBox() {
 
   return (
-    <div>
+    <div className="infobox">
     <h1>App is working</h1>
     </div>
   )
