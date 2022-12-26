@@ -26,4 +26,4 @@ class InfoBox extends React.Component {
 
 const rootNode = document.getElementById('app');
 const root = ReactDOM.createRoot(rootNode);
-root.render(<InfoBox />, rootNode);
+root.render(<InfoBox />);
