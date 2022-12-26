@@ -3,9 +3,9 @@
 function InfoBox() {
 
   return (
-    <>
+    <div>
     <h1>App is working</h1>
-    </>
+    </div>
   )
 }
 
