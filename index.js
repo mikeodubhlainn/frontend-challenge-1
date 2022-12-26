@@ -5,6 +5,10 @@ class InfoBox extends React.Component {
         super(props)
     }
 
+    handleClick(){
+        alert("Button clicked!");
+    }
+
   render() {
     return (
         <div className="infobox">
@@ -17,7 +21,8 @@ class InfoBox extends React.Component {
             <input type="text"></input>
             <h3>Phone Number</h3>
             <input type="text"></input>
-            <button type="submit">Next Step</button>
+            <br/>
+            <button type="submit" onClick={handleClick}>Next Step</button>
         </form>
         </div>
   )}
