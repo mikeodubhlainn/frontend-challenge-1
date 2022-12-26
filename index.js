@@ -22,7 +22,7 @@ class InfoBox extends React.Component {
             <h3>Phone Number</h3>
             <input type="text"></input>
             <br/>
-            <button type="submit" onClick={handleClick}>Next Step</button>
+            <button type="submit" onClick={handleClick()}>Next Step</button>
         </form>
         </div>
   )}
