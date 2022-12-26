@@ -11,4 +11,4 @@ function InfoBox() {
 
 const rootNode = document.getElementById('info-box-root');
 const root = ReactDOM.createRoot(rootNode);
-root.render(React.createElement(InfoBox));
+ReactDOM.render(<InfoBox />, rootNode);
