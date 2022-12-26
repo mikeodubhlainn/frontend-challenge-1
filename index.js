@@ -1,21 +1,14 @@
 'use strict';
 
-function LikeButton() {
-  const [liked, setLiked] = React.useState(false);
+function InfoBox() {
 
-  if (liked) {
-    return 'You liked this!';
-  }
-
-  return React.createElement(
-    'button',
-    {
-      onClick: () => setLiked(true),
-    },
-    'Like'
-  );
+  return (
+    <>
+    <h1>App is working</h1>
+    </>
+  )
 }
 
-const rootNode = document.getElementById('like-button-root');
+const rootNode = document.getElementById('info-box-root');
 const root = ReactDOM.createRoot(rootNode);
-root.render(React.createElement(LikeButton));
+root.render(React.createElement(InfoBox));
