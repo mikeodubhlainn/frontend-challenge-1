@@ -5,10 +5,6 @@ class InfoBox extends React.Component {
         super(props)
     }
 
-    handleClick() {
-        alert("Button clicked!");
-    }
-
   render() {
     return (
         <div className="infobox">
@@ -22,12 +18,12 @@ class InfoBox extends React.Component {
             <h3>Phone Number</h3>
             <input type="text"></input>
             <br/>
-            <button type="submit" onClick={handleClick()}>Next Step</button>
+            <button type="submit">Next Step</button>
         </form>
         </div>
   )}
 }
 
-const rootNode = document.getElementById('info-box-root');
+const rootNode = document.getElementById('app');
 const root = ReactDOM.createRoot(rootNode);
-ReactDOM.render(<InfoBox />, rootNode);
+root.render(<InfoBox />, rootNode);
