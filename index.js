@@ -11,4 +11,4 @@ class Like extends React.Component {
 
 const domContainer = document.getElementById("app");
 const root = ReactDOM.createRoot(domContainer);
-root.render(<Like />);
+ReactDOM.render(<Like />, domContainer);
